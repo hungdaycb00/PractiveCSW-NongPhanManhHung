@@ -26,7 +26,7 @@ public class ProductRestController {
         return repository.save(newProduct);
     }
 
-    @PutMapping("/pro/buy/{id}{quantity}")
+    @PutMapping("/pro/buy/{id}/{quantity}")
     Product buy(@PathVariable Integer id, @PathVariable Integer quantity) {
 
         return repository.buy(id,quantity);
